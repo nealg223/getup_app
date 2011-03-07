@@ -6,6 +6,8 @@ GetupApp::Application.routes.draw do
   get "pages/project"
 
   get "pages/task"
+  
+  get "pages/analytics"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
