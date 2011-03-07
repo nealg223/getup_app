@@ -1,4 +1,12 @@
 GetupApp::Application.routes.draw do
+  get "pages/login"
+
+  get "pages/setup"
+
+  get "pages/project"
+
+  get "pages/task"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
