@@ -4,6 +4,10 @@ class PagesController < ApplicationController
     @title = "Welcome"
   end
   
+  def signup
+    @title = "Signup"
+  end
+  
   def login
     @title = "Login"
   end
@@ -20,5 +24,8 @@ class PagesController < ApplicationController
     @title = "Team"
   end
   
+  def friends
+    @title = "Friends"
+  end
   
 end

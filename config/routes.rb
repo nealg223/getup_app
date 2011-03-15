@@ -1,13 +1,18 @@
 GetupApp::Application.routes.draw do
-  get "pages/welcome"
 
-  get "pages/login"
+  get "users/new"
 
-  get "pages/profile"
+  match '/signup',    :to => 'users#signup'
 
-  get "pages/progress"
+  match '/welcome',   :to => 'pages#welcome'
+  match '/login',     :to => 'pages#login'
+  match '/profile',   :to => 'pages#profile'
+  match '/progress',  :to => 'pages#progress'
+  match '/team',      :to => 'pages#team'
+  match '/friends',   :to => 'pages#friends'
+  match '/teamgetup', :to => 'pages#teamgetup'
   
-  get "pages/team"
+  root :to => 'pages#welcome' # Neal should change to profile for users that are signed in once he re-learns how to do that!
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
