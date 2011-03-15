@@ -1,13 +1,13 @@
 GetupApp::Application.routes.draw do
+  get "pages/welcome"
+
   get "pages/login"
 
-  get "pages/setup"
+  get "pages/profile"
 
-  get "pages/project"
-
-  get "pages/task"
+  get "pages/progress"
   
-  get "pages/analytics"
+  get "pages/team"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

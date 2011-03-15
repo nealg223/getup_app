@@ -1,22 +1,24 @@
 class PagesController < ApplicationController
+  
+  def welcome
+    @title = "Welcome"
+  end
+  
   def login
     @title = "Login"
   end
-
-  def setup
-    @title = "Setup"
+  
+  def profile
+    @title = "Profile"
   end
 
-  def project
-    @title = "Project"
+  def progress
+    @title = "Progress"
   end
 
-  def task
-    @title = "Task"
+  def team
+    @title = "Team"
   end
   
-  def analytics
-    @title = "Analytics"
-  end
-
+  
 end
