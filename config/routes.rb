@@ -1,7 +1,7 @@
 GetupApp::Application.routes.draw do
   resources :users
 
-  match '/signup',    :to => 'users#signup'
+  match '/signup',    :to => 'users#new'
 
   match '/welcome',   :to => 'pages#welcome'
   match '/login',     :to => 'pages#login'
