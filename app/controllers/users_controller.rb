@@ -13,7 +13,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user]) # params[:user] calls the hash of user attributes
     if @user.save
-      flash[:success] = "Welcome to the Sample App!"
+      sign_in @user
+      flash[:success] = "Welcome to the Get Up App!"
       redirect_to @user
     else
       @title = "Sign up"
