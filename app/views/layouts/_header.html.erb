@@ -6,11 +6,12 @@
         <li><%= link_to "Profile", current_user %></li>
         <li><%= link_to "Progress", progress_path %></li>
         <li><%= link_to "Team", team_path %></li>
-        <li><%= link_to "Friends", friends_path %></li>
+        <li><%= link_to "Friends", users_path %></li>
+        <li><%= link_to "Settings", edit_user_path(current_user) %></li>
         <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
         <% else %>
         <li><%= link_to "Sign in", signin_path %></li>
         <% end %>
       </ul> 
     </nav>
-  </header>
+</header>
